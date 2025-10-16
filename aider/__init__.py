@@ -1,6 +1,6 @@
 from packaging import version
 
-__version__ = "0.86.2.dev-Naveen-16-Oct-25"
+__version__ = "0.86.2.dev-NaveenKD"
 safe_version = __version__
 
 try:
@@ -15,6 +15,6 @@ else:
         if version.parse(__version__) < version.parse(safe_version):
             __version__ = safe_version + "+less"
     except Exception:
-        __version__ = safe_version + "+parse"
+        __version__ = safe_version
 
 __all__ = [__version__]
