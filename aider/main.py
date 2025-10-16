@@ -37,12 +37,11 @@ from aider.report import report_uncaught_exceptions
 from aider.versioncheck import check_version, install_from_main_branch, install_upgrade
 from aider.watch import FileWatcher
 
-from .dump import dump  # noqa: F401
+from .dump import dump  #   noqa: F401
 
- from datetime import datetime
-      build_time = datetime.now().strftime("%d/%m %H:%M")
-      print(f"\nThis is a custom build by Naveen - Built on {build_time}\n")
-
+from datetime import datetime
+build_time = datetime.now().strftime("%d/%m %H:%M")
+print(f"\nThis is a custom build by Naveen - Built on {build_time}\n")
 
 def check_config_files_for_yes(config_files):
     found = False
