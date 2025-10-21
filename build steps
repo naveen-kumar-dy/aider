@@ -6,7 +6,7 @@ set upstream  https://github.com/Aider-AI/aider.git
 
 3. now make the relvant changes . (add version into init file ) 
 4. create a virtual env 
-python3 -m venv venv
+python -m venv venv
 source venv/bin/activate
 pip install --upgrade pip setuptools wheel
 
