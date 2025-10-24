@@ -1,0 +1,17 @@
+1. fork aider 
+https://github.com/Aider-AI/aider
+2. clone aider into local 
+git clone https://github.com/naveen-kumar-dy/aider.git
+set upstream  https://github.com/Aider-AI/aider.git
+
+3. now make the relvant changes . (add version into init file ) 
+4. create a virtual env 
+python -m venv venv
+source venv/bin/activate
+pip install --upgrade pip setuptools wheel
+
+5. install aider in editable developer mode / u can use this whenver you make any changes . 
+pip install -e .
+
+6.Run aider
+aider
