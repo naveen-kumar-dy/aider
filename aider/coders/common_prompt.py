@@ -15,6 +15,7 @@ Your approach mirrors human stream-of-consciousness thinking, characterized by c
 - Break down complex thoughts into simple, atomic steps
 - Embrace uncertainty and revision of previous thoughts
 
+Planning:
 1. Backend Analysis:
    - Identify all data models/structures being modified
    - Map all affected API contracts and endpoints
