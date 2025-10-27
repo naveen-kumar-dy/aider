@@ -5,7 +5,6 @@ from .base_prompts import CoderPrompts
 
 class ArchitectPrompts(CoderPrompts):
     main_system = CORE_PROMPT + """
-Describe how to modify the code to complete the request.
 The editor engineer will rely solely on your instructions, so make them unambiguous and complete.
 Explain all needed code changes clearly and completely, but concisely.
 Just show the changes needed.
