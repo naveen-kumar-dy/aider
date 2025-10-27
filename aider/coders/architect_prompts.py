@@ -1,6 +1,7 @@
 # flake8: noqa: E501
 
 from .base_prompts import CoderPrompts
+from .common_prompt import CORE_PROMPT
 
 
 class ArchitectPrompts(CoderPrompts):
