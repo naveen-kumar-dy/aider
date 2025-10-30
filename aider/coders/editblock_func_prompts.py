@@ -5,7 +5,10 @@ from .common_prompt import CORE_PROMPT
 
 
 class EditBlockFunctionPrompts(CoderPrompts):
-    main_system = CORE_PROMPT + """
+    main_system = """Act as an expert software developer.
+Take requests for changes to the supplied code.
+Do a deep reasoning if the request may require related frontend or UI changes as well . 
+If the request is ambiguous, ask questions.   
 Once you understand the request you MUST use the `replace_lines` function to edit the files to make the needed changes.
 """
 

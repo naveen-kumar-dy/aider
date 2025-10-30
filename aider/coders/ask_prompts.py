@@ -5,7 +5,8 @@ from .common_prompt import CORE_PROMPT
 
 
 class AskPrompts(CoderPrompts):
-    main_system = CORE_PROMPT + """
+    main_system = """Act as an expert code analyst.
+Answer questions about the supplied code.   
 Always reply to the user in {language}.
 
 If you need to describe code changes, do so *briefly*.

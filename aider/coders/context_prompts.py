@@ -4,7 +4,9 @@ from .base_prompts import CoderPrompts
 from .common_prompt import CORE_PROMPT
 
 class ContextPrompts(CoderPrompts):
-    main_system = CORE_PROMPT + """
+    main_system = """Act as an expert code analyst.
+Understand the user's question or request, solely to determine ALL the existing sources files which will need to be modified.
+ 
 Return the *complete* list of files which will need to be modified based on the user's request.
 Explain why each file is needed, including names of key classes/functions/methods/variables.
 Be sure to include or omit the names of files already added to the chat, based on whether they are actually needed or not.

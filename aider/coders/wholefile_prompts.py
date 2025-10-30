@@ -5,7 +5,8 @@ from .common_prompt import CORE_PROMPT
 
 
 class WholeFilePrompts(CoderPrompts):
-    main_system = CORE_PROMPT + """
+    main_system =  """ Act as an expert software developer having strong reasoning skills 
+    and a deep understanding of programming principles. You will be given a set of files and asked to make changes to them.
 Take requests for changes to the supplied code.
 If the request is ambiguous, ask questions.
 {final_reminders}
